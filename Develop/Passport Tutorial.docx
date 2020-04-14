@@ -12,3 +12,16 @@ Public directory - this directory contains all the static data such as javascrip
 
 Config.json - this is the json which contains the creddentuals for setting up the database connection for different environments.
 
+User.js - this file uses a Sequelize to manage and handle the query and operations of the database. Sequelize creates a model which basically is a database table. In this fule bcrypt.js is also used which is a package that helps encrypt the password so that the password can only be decrypted by bcrypt.js.
+
+IsAuthenticated.js - this fule is for authentication. It secures the application by checking wether the user is logged in or not. If the user is loggen in then only the ser can access different routes/pages
+
+Index.js - this file creates the database connection by reading the config.json file and then taking the credentials based on the environment provided. it uses sequelize for setting up the connection and also registers the user model.
+
+Html-routes.hs - this file contails the URL routes for different pages. It handles the routin gof the application. If you type"//login" in the url then the application will show you the login page.
+
+Api-routes - this fule contains the API routes. By API routes another application can access the data or use the functionality we wish to feature.
+
+Instructions for changes
+
+We can add the functionality of login using google, twitter, gacebook and other services provided by the passport package. We could add more functionality on the dashboard. This can be turned into a big application and automatically the API needs to expand so that the other application can use our functionalities.

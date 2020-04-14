@@ -1,0 +1,3 @@
+Passport Tutorial
+
+This is a node express application which demonstates the use of the passport package. Passport is Express-compatible authentication for middleware for node.js. Passport's sole purpose is authenticate requests, which it does through an extensive set of plug-ins know as strategies. Passpoirt does not mount routes of assume any particular database schema, which maxes the flexibility and allows application-level decisions to be made by the developper. The API is somewhat simple: you provide Passport with a request to authenticate and then Passport provides hooks for controlling what occurs when authentication succeeds or fails.

@@ -1,3 +1,14 @@
 Passport Tutorial
 
-This is a node express application which demonstates the use of the passport package. Passport is Express-compatible authentication for middleware for node.js. Passport's sole purpose is authenticate requests, which it does through an extensive set of plug-ins know as strategies. Passpoirt does not mount routes of assume any particular database schema, which maxes the flexibility and allows application-level decisions to be made by the developper. The API is somewhat simple: you provide Passport with a request to authenticate and then Passport provides hooks for controlling what occurs when authentication succeeds or fails.
+This is a node express application which demonstates the use of the passport package. Passport is Express-compatible authentication for middleware for node.js. Passport's sole purpose is authenticate requests, which it does through an extensive set of plug-ins know as strategies. Passport does not mount routes of assume any particular database schema, which maxes the flexibility and allows application-level decisions to be made by the developer. The API is somewhat simple: you provide Passport with a request to authenticate and then Passport provides hooks for controlling what occurs when authentication succeeds or fails.
+
+Explanation of files
+
+Package.json - this file hold the information of the application and what modules this application uses. It also contains the scripts which are necessary for starting the application. The application starts by running the command "npm state" provided that the database connection setup is done.
+
+Server.js - this is the main file of the application. It runs first when we start the application. It imports certain modules and also syncs up with the database and starts the application by listening on port 8080 or the port user set un envirmonment variables. It also registers all the URL routes of the application to move to different pages.
+
+Public directory - this directory contains all the static data such as javascrips and stylesheets for HTML pages. It contains three pages for login, sign up for signing up with a new account and then members which is bsically the dashboard the usere sees after logging in.
+
+Config.json - this is the json which contains the creddentuals for setting up the database connection for different environments.
+
